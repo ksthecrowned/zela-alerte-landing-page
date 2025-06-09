@@ -61,6 +61,12 @@ export default function Home() {
     }
   ];
 
+  const faqs = [
+    { q: "Est-ce que Zela Alerte est gratuit ?", a: "Oui, l’application est 100% gratuite pour tous." },
+    { q: "Faut-il créer un compte ?", a: "Oui, un compte est necessaire pour une meilleur expérience et aide à suivre tes alertes." },
+    { q: "Est-ce fiable ?", a: "Les signalements sont citoyens, donc communautaires et mis à jour en temps réel." },
+    { q: "Et mes données ?", a: "Zela Alerte respecte ta vie privée. Aucune donnée n’est vendue ou partagée." }
+  ];
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-red-50">
       {/* Hero Section */}
@@ -86,8 +92,10 @@ export default function Home() {
               L'alerte citoyenne entre tes mains
             </p>
             
-            <p className="text-lg text-gray-500 mb-12 max-w-2xl mx-auto">
-              Restez informé des coupures d'électricité, d'eau et d'internet dans votre zone grâce aux rapports de la communauté
+            <p className="text-gray-500 mb-12 max-w-2xl mx-auto">
+              🚨 Coupure d’électricité chez toi ? Tu te demandes si c’est généralisé ? <br />
+              💧 Besoin de savoir où trouver de l’eau facilement ? <br />
+              📶 Internet HS ? Tu veux savoir si c’est général ou juste un bug local ?
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -248,6 +256,20 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* <section className="px-6 py-24 bg-white">
+        <h2 className="text-4xl font-bold text-center text-gray-900 mb-16">
+          Questions fréquentes
+        </h2>
+        <div className="max-w-5xl mx-auto space-y-10">
+          {faqs.map((faq, i) => (
+            <div key={i} className="bg-gray-50 p-6 rounded-xl shadow">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">{faq.q}</h3>
+              <p className="text-gray-700 text-base">{faq.a}</p>
+            </div>
+          ))}
+        </div>
+      </section> */}
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-16">
